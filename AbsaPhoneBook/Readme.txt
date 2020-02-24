@@ -15,7 +15,7 @@ Solution also includes unit tests:
 To run:
 
 1. Inside Database\localdb attach the .mdf file to your localdb server.
-2. Inside the Release folder modify appsettings.json to use the connection string to the database on your machine, make sure \ characters are escaped e.g. Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Source\\AbsaPhoneBook\\Database\\localdb\\MSSQLLocalDBAbsaPhonebook_Primary.mdf
+2. Inside the Release folder modify theappsettings.json to use the connection string to the database on your machine, make sure \ characters are escaped e.g. Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Source\\AbsaPhoneBook\\Database\\localdb\\MSSQLLocalDBAbsaPhonebook_Primary.mdf
 3. Run StartServer.bat
 4. Run StartAngularClient.bat
 5. Browse to http://localhost:4224/
