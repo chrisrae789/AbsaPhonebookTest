@@ -1,0 +1,8 @@
+D:\Source\AbsaPhoneBook\Domain\bin\Release\netcoreapp3.1\Domain.deps.json
+D:\Source\AbsaPhoneBook\Domain\bin\Release\netcoreapp3.1\Domain.dll
+D:\Source\AbsaPhoneBook\Domain\bin\Release\netcoreapp3.1\Domain.pdb
+D:\Source\AbsaPhoneBook\Domain\obj\Release\netcoreapp3.1\Domain.AssemblyInfoInputs.cache
+D:\Source\AbsaPhoneBook\Domain\obj\Release\netcoreapp3.1\Domain.AssemblyInfo.cs
+D:\Source\AbsaPhoneBook\Domain\obj\Release\netcoreapp3.1\Domain.dll
+D:\Source\AbsaPhoneBook\Domain\obj\Release\netcoreapp3.1\Domain.pdb
+D:\Source\AbsaPhoneBook\Domain\obj\Release\netcoreapp3.1\Domain.csprojAssemblyReference.cache

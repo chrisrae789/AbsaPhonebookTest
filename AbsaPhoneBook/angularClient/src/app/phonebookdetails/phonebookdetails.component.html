@@ -1,0 +1,66 @@
+<div>
+  <div class="input-group mb-3" id="formContainer">
+    <form *ngIf="phonebook != null" [formGroup]="entryForm">
+      <label>
+        <input matInput placeholder={{phonebook.name}} formControlName="changephonebookname" type="text">
+      </label>
+      <button mat-raised-button color="primary" type="button" (click)="changePhonebookName()"
+        [disabled]="!entryForm.valid">Change name</button>
+      <br>
+      <label>
+        <input matInput placeholder="Search for entry" [value]="entryname" formControlName="entryname" type="text">
+      </label>
+      <button mat-raised-button color="primary" type="button" (click)="search()">
+        <mat-icon color="white">search</mat-icon><b>Search</b>
+      </button>
+    </form>
+  </div>
+
+  <div class="input-group mb-3"></div>
+  <th *ngIf="phonebook != null">{{phonebook.name}} entries <button mat-raised-button color="accent"
+      (click)="createPhonebookEntry()">Add Entry</button>
+  </th>
+
+  <p *ngIf="!phonebookentries"><em>Loading...</em></p>
+
+  <br>
+  <div>
+  </div>
+
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <ng-container matColumnDef="Name">
+      <th mat-header-cell *matHeaderCellDef> Name
+        <br>
+        <mat-form-field class="filter">
+          <input matInput placeholder="Name Filter" [formControl]="nameFilter">
+        </mat-form-field>
+      </th>
+      <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    </ng-container>
+    <ng-container matColumnDef="Number">
+      <th mat-header-cell *matHeaderCellDef> Number
+        <br>
+        <mat-form-field class="filter">
+          <input matInput placeholder="Phone Number Filter" [formControl]="numberFilter">
+        </mat-form-field>
+      </th>
+      <td mat-cell *matCellDef="let element"> {{element.phoneNumber}} </td>
+    </ng-container>
+    <ng-container matColumnDef="Actions">
+      <th mat-header-cell *matHeaderCellDef> Actions </th>
+      <td mat-cell *matCellDef="let element">
+        <a routerLink="/openPhonebookEntry/{{element.id}}"><button mat-raised-button color="primary">
+            <mat-icon color="white">edit</mat-icon> <b>Edit</b>
+          </button></a>
+        <button (click)="deletePhonebookEntry(element)" mat-raised-button color="warn">
+          <mat-icon color="white">delete_sweep</mat-icon><b>Delete</b>
+        </button>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+  </table>
+
+  <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[1, 5, 10, 25, 100]"></mat-paginator>

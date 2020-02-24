@@ -1,0 +1,18 @@
+<div class="container">
+  <form *ngIf="entry != null" [formGroup]="entryForm">
+    <mat-form-field>
+      <mat-label>Name</mat-label>
+      <input matInput formControlName="name" type="text">
+    </mat-form-field>
+    <br>
+
+    <mat-form-field>
+      <mat-label>Phone Number</mat-label>
+      <input matInput formControlName="phonenumber" type="text">
+    </mat-form-field>
+    <br>
+    <button mat-raised-button type="submit" class="btn-primary theButtons" (click)="submit()"
+      [disabled]="!entryForm.valid">Submit</button>
+  </form>
+
+</div>

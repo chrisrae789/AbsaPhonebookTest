@@ -1,0 +1,14 @@
+C:\Users\chris\source\repos\AbsaPhoneBook\AbsaPhonebook\bin\Release\AbsaPhonebook.dacpac
+C:\Users\chris\source\repos\AbsaPhoneBook\AbsaPhonebook\bin\Release\AbsaPhonebook.dll
+C:\Users\chris\source\repos\AbsaPhoneBook\AbsaPhonebook\bin\Release\AbsaPhonebook.pdb
+C:\Users\chris\source\repos\AbsaPhoneBook\AbsaPhonebook\obj\Release\AbsaPhonebook.dll
+C:\Users\chris\source\repos\AbsaPhoneBook\AbsaPhonebook\obj\Release\AbsaPhonebook.pdb
+C:\Users\chris\source\repos\AbsaPhoneBook\AbsaPhonebook\obj\Release\Model.xml
+C:\Users\chris\source\repos\AbsaPhoneBook\AbsaPhonebook\obj\Release\refactor.xml
+C:\Users\chris\source\repos\AbsaPhoneBook\AbsaPhonebook\obj\Release\postdeploy.sql
+C:\Users\chris\source\repos\AbsaPhoneBook\AbsaPhonebook\obj\Release\predeploy.sql
+D:\Source\AbsaPhoneBook\Database\bin\Release\AbsaPhonebook.dacpac
+D:\Source\AbsaPhoneBook\Database\bin\Release\AbsaPhonebook.dll
+D:\Source\AbsaPhoneBook\Database\bin\Release\AbsaPhonebook.pdb
+D:\Source\AbsaPhoneBook\Database\obj\Release\AbsaPhonebook.dll
+D:\Source\AbsaPhoneBook\Database\obj\Release\AbsaPhonebook.pdb

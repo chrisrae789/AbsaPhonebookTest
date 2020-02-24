@@ -1,0 +1,13 @@
+D:\Source\AbsaPhoneBook\Persistance\bin\Release\netcoreapp3.1\Persistance.deps.json
+D:\Source\AbsaPhoneBook\Persistance\bin\Release\netcoreapp3.1\Persistance.runtimeconfig.json
+D:\Source\AbsaPhoneBook\Persistance\bin\Release\netcoreapp3.1\Persistance.runtimeconfig.dev.json
+D:\Source\AbsaPhoneBook\Persistance\bin\Release\netcoreapp3.1\Persistance.dll
+D:\Source\AbsaPhoneBook\Persistance\bin\Release\netcoreapp3.1\Persistance.pdb
+D:\Source\AbsaPhoneBook\Persistance\bin\Release\netcoreapp3.1\Domain.dll
+D:\Source\AbsaPhoneBook\Persistance\bin\Release\netcoreapp3.1\Domain.pdb
+D:\Source\AbsaPhoneBook\Persistance\obj\Release\netcoreapp3.1\Persistance.csprojAssemblyReference.cache
+D:\Source\AbsaPhoneBook\Persistance\obj\Release\netcoreapp3.1\Persistance.AssemblyInfoInputs.cache
+D:\Source\AbsaPhoneBook\Persistance\obj\Release\netcoreapp3.1\Persistance.AssemblyInfo.cs
+D:\Source\AbsaPhoneBook\Persistance\obj\Release\netcoreapp3.1\Persistance.csproj.CopyComplete
+D:\Source\AbsaPhoneBook\Persistance\obj\Release\netcoreapp3.1\Persistance.dll
+D:\Source\AbsaPhoneBook\Persistance\obj\Release\netcoreapp3.1\Persistance.pdb
