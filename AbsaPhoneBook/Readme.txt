@@ -2,7 +2,6 @@ Application built using Visual Studio Code and Visual Studio 2019
 
 Required Node.js, Angular 8, .NET Core 3.1 using WebAPI and EntityFramework, localdb
 
-You will need the latest visual studio build tools for .NET Core (https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16)
 
 Solution is structured to have a Domain for the entities, Persistance for access to the database using EntityFramework and Phonebook.API as a WebAPI with a controller that receives get/post/put/delete requests. A database solution is included for the structure of the database.
 
