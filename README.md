@@ -12,7 +12,9 @@ The Angular Client is in angularClient. This has a home component which shows ph
 There are two services, phonebookservice and phonebookentryservice used to call the API.
 
 Solution also includes unit tests:
+
 -PhoenbookAPIFixture - Tests which call the API
+
 -PersistanceFixture - Tests which call the Database (will not work unless database schema published to local db)
 
 To run:
