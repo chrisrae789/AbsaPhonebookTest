@@ -7,7 +7,7 @@ import { PhonebookService } from '../phonebook.service';
 import { Location } from '@angular/common';
 import { FormBuilder, FormGroup, FormControl } from '@angular/forms';
 import { Validators } from '@angular/forms';
-import { MatDialog, MatSnackBar } from '@angular/material';
+import { MatSnackBar } from '@angular/material';
 import { HeadingService } from '../heading.service';
 
 @Component({
@@ -38,7 +38,7 @@ export class PhonebookentrydetailsComponent implements OnInit {
     this.location.back();
   }
 
-  private submit() {
+  submit() {
     this.entry.name = this.entryForm.get('name').value;
     var entryNumber = this.entryForm.get('phonenumber').value;
 

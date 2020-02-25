@@ -26,7 +26,7 @@ export class HomeComponent  {
   @ViewChild(MatSort,  {static: false}) sort: MatSort;
   @ViewChild(MatPaginator,  {static: false}) paginator: MatPaginator;
 
-  private deletePhonebook(value : Phonebook)
+  deletePhonebook(value : Phonebook)
   {
     this.snackbar.open("Deleted phonebook - "+ value.name);
     this.service.deletePhonebookById(value.id).subscribe(result => {
@@ -34,7 +34,7 @@ export class HomeComponent  {
     }, error => console.error(error));
   }
 
-  private addPhonebook()
+  addPhonebook()
   {
     if(this.newphonebookname == "")
     {
@@ -50,7 +50,8 @@ export class HomeComponent  {
     }, error => console.error(error));
 
   }
-  private search()
+
+  search()
   {
     this.refreshPhonebookList();
   }

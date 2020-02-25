@@ -19,7 +19,7 @@ export class NewPhonebookEntryComponent implements OnInit {
     public dialogRef: MatDialogRef<NewPhonebookEntryComponent>,
     @Inject(MAT_DIALOG_DATA) public data: PhonebookEntry) { }
 
-  private onSubmit(): void {
+   onSubmit(): void {
     this.data.name = this.entryForm.get('name').value;
     var entryNumber = this.entryForm.get('phonenumber').value;
     var regex = /^[0-9\s]*$/;

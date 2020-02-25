@@ -7,9 +7,7 @@ import { Phonebook } from '../phonebook';
 import { FormGroup, FormControl } from '@angular/forms';
 import { Validators } from '@angular/forms';
 import { MatSort, MatPaginator, MatTableDataSource, MatDialog, MatSnackBar } from '@angular/material';
-import { PhonebookentrydetailsComponent } from '../phonebookentrydetails/phonebookentrydetails.component';
 import { NewPhonebookEntryComponent } from '../new-phonebook-entry/new-phonebook-entry.component';
-import { Title } from '@angular/platform-browser';
 import { HeadingService } from '../heading.service';
 
 @Component({
@@ -49,7 +47,7 @@ export class PhonebookdetailsComponent implements OnInit {
     this.dataSource.filter = filterValue.trim().toLowerCase();
   }
 
-  private changePhonebookName() {
+  changePhonebookName() {
     this.phonebook.name = this.entryForm.get('changephonebookname').value;
     this.phonebookService.updatePhonebook(this.phonebook).subscribe(result => {
       this.router.navigateByUrl("/openPhonebook/" + this.phonebook.id + "/" + this.phonebook.name);
@@ -57,14 +55,14 @@ export class PhonebookdetailsComponent implements OnInit {
     this.snackbar.open("Phonebook name changed to " + this.phonebook.name);
   }
 
-  private deletePhonebookEntry(value: PhonebookEntry) {
+  deletePhonebookEntry(value: PhonebookEntry) {
     this.service.deletePhonebookEntryById(value.id).subscribe(result => {
       this.snackbar.open("Deleted phonebook entry - " + value.name);
       this.refreshEntryList();
     }, error => console.error(error));
   }
 
-  private createPhonebookEntry() {
+ createPhonebookEntry() {
     this.dialog.open(NewPhonebookEntryComponent, { data: new PhonebookEntry() }).afterClosed().subscribe(result => {
       if (result != null) {
         let newEntry = result;
@@ -94,7 +92,7 @@ export class PhonebookdetailsComponent implements OnInit {
     }, error => console.error(error));
   }
 
-  private search() {
+  search() {
     this.entryname = this.entryForm.get("entryname").value;
     this.refreshEntryList();
   }
